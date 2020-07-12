@@ -1,12 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+
+// Views
+
+import { HomeComponent } from './views/home/home.component';
+import { SearchResultsComponent } from './views/search-results/search-results.component';
+
+// Components
+
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { VideoContainerComponent } from './video-container/video-container.component';
-import { BannerComponent } from './banner/banner.component';
-import { HomeComponent } from './home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { VideoContainerComponent } from './components/video-container/video-container.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { CompanyInformationComponent } from './views/company-information/company-information.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +22,13 @@ import { HomeComponent } from './home/home.component';
     NavBarComponent,
     VideoContainerComponent,
     BannerComponent,
-    HomeComponent
+    HomeComponent,
+    SearchResultsComponent,
+    ContactComponent,
+    CompanyInformationComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
