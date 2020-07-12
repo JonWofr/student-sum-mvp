@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  },
+  {
+    "id": "2",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  },
+  {
+    "id": "3",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  },
+  {
+    "id": "4",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  },
+  {
+    "id": "5",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  },
+  {
+    "id": "6",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "lecture": {
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
+    },
+    "price": 30,
+    "discountedPrice": 18,
+    "rating": 4.7,
+    "thumbnail": "/assets/images/ki.png",
+    "duration": 250,
+    "reviewCount": 8
+  }
+]
