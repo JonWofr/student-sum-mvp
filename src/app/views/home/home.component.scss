@@ -24,14 +24,38 @@ div.home-banner-top {
 
 div.advantages-box {
   height: 40%;
-  .advantage {
-    height: 100%;
-    width: 33%;
-    .row {
-      height: 100%;
-      .card-body {
-        height: 100%;
-      }
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.info-banner {
+  height: 100%;
+  .info {
+    display: flex;
+    width: 80%;
+    position: relative;
+
+    img {
+      width: 40%;
+    }
+    .info-text {
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 40%;
+    }
+  }
+
+  #info-1 {
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+  }
+  #info-2 {
+    margin-left: 20%;
+    img {
+      right: 5%;
+      position: absolute;
     }
   }
 }
