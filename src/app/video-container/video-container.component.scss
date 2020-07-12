@@ -1,0 +1,41 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+div.img-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/assets/ki.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20%;
+  }
+
+  h4 {
+    color: white;
+    z-index: 2;
+  }
+}
+
+.card-body {
+}
