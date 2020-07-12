@@ -9,6 +9,8 @@ import { Course } from '../../models/course';
 export class VideoContainerComponent implements OnInit {
   @Input() course: Course;
 
+  starValues = [1, 2, 3, 4, 5];
+
   constructor() {}
 
   ngOnInit(): void {}

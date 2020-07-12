@@ -8,9 +8,9 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
-    "rating": 4.7,
+    "price": 42,
+    "discountedPrice": 30,
+    "rating": 4,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
     "reviewCount": 8
@@ -24,8 +24,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
+    "price": 42,
+    "discountedPrice": 30,
     "rating": 4.7,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -40,8 +40,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
+    "price": 42,
+    "discountedPrice": 30,
     "rating": 4.7,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -56,8 +56,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
+    "price": 42,
+    "discountedPrice": 30,
     "rating": 4.7,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -72,8 +72,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
+    "price": 42,
+    "discountedPrice": 30,
     "rating": 4.7,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -88,8 +88,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 30,
-    "discountedPrice": 18,
+    "price": 42,
+    "discountedPrice": 30,
     "rating": 4.7,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
