@@ -15,6 +15,7 @@ import { VideoContainerComponent } from './components/video-container/video-cont
 import { BannerComponent } from './components/banner/banner.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { CompanyInformationComponent } from './views/company-information/company-information.component';
+import { AdvantageComponent } from './components/advantage/advantage.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CompanyInformationComponent } from './views/company-information/company
     SearchResultsComponent,
     ContactComponent,
     CompanyInformationComponent,
+    AdvantageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
