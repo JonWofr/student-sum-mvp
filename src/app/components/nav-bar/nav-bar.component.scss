@@ -1,4 +1,7 @@
 nav {
   height: 56px !important;
-  background-color: #2a9d8f !important;
+  background-color: #2b2d42 !important;
+  > * {
+    color: white;
+  }
 }

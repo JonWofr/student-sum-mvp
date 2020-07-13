@@ -1,61 +1,76 @@
 div.home-banner-top {
   width: 100%;
-  height: 60%;
+  min-height: 60%;
   background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url("/assets/geometry.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
   div.banner-box {
-    width: 35%;
-    height: 80%;
-    background-color: white;
-    margin-left: 50px;
-    div.card-body {
-      h2 {
-      }
-      p {
-      }
-      input {
-      }
-    }
+    padding: 5%;
+    margin-left: 14%;
+    max-width: 95%;
+    background-color: #edf2f4;
+  }
+  .search-field {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  div.banner-box {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .search-field {
+    width: 90% !important;
+  }
+
+  div.banner-box {
+    padding: 5%;
+    width: 50%;
+  }
+}
+
+.advantages-wrapper {
+  background-color: #8d99ae;
+  margin-bottom: 40px;
+  h3 {
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
   }
 }
 
 div.advantages-box {
-  height: 40%;
+  min-height: 17.5%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 div.info-banner {
-  height: 100%;
   .info {
     display: flex;
-    width: 80%;
-    position: relative;
-
-    img {
-      width: 40%;
-    }
-    .info-text {
-      margin-left: 5%;
-      margin-right: 5%;
-      width: 40%;
-    }
-  }
-
-  #info-1 {
-    margin-left: 2.5%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 5%;
-  }
-  #info-2 {
-    margin-left: 20%;
-    img {
-      right: 5%;
-      position: absolute;
-    }
   }
 }
