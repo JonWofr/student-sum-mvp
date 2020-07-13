@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "studary-98dad": {
+      "hosting": {
+        "release": [
+          "studary"
+        ]
+      }
+    }
+  }
+}
