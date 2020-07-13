@@ -1,0 +1,16 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"
+      >Deine Hochschule</label
+    >
+  </div>
+  <select
+    #universitySelect
+    (change)="onChangeSelectValue(universitySelect.value, $event)"
+    class="custom-select"
+    id="inputGroupSelect01"
+  >
+    <option selected>Wähle aus...</option>
+    <option value="hdm">Hochschule der Medien</option>
+  </select>
+</div>
