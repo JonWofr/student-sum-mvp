@@ -5,27 +5,54 @@ div.home-banner-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url("/assets/geometry.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
   div.banner-box {
     padding: 5%;
     margin-left: 14%;
+    max-width: 95%;
+    background-color: #edf2f4;
+  }
+  .search-field {
+    width: 100%;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 700px) {
   div.banner-box {
-    margin-left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .search-field {
+    width: 90% !important;
+  }
+
+  div.banner-box {
+    padding: 5%;
+    width: 50%;
   }
 }
 
 .advantages-wrapper {
-  background-color: lavender;
+  background-color: #8d99ae;
   margin-bottom: 40px;
   h3 {
-    min-height: 2.5%;
+    color: white;
+    line-height: 100px;
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
+  }
+  p {
+    color: white;
   }
 }
 
@@ -42,7 +69,6 @@ div.info-banner {
   .info {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 5%;

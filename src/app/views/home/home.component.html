@@ -6,17 +6,10 @@
         bli bla blub bli bla blub bli bla blub bli bla blub bli bla blub bli bla
         blub
       </p>
-      <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
+      <app-searchfield
+        class="search-field"
+        (changeSelectValue)="onChangeSelectValue($event)"
+      ></app-searchfield>
     </div>
   </div>
 </div>
@@ -34,11 +27,9 @@
   <div id="info-1" class="info row">
     <img class="col-md-4" src="/assets/sample.JPG" alt="" />
     <div class="info-text col-md-5">
-      <h3>Das ist hieran geil!</h3>
+      <h3>Strukturierte Zusammenfassung mit Sinnabschnitten</h3>
       <p>
-        bli bla blub bli bla blub bli bla blub bli bla blub bli bla blub bli bla
-        blub bli bla blub bli bla blub bli bla blub bli bla blub bli bla blub
-        bli bla blub bli bla blub
+        Lerne für deine Vorlesung wann und wo du willst. Lerne mit
       </p>
     </div>
   </div>

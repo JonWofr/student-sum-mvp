@@ -8,19 +8,25 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   img {
-    max-height: 80px;
+    max-height: 70px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
+  }
+  h5 {
+    color: white;
+    font-weight: 700;
   }
 
   p {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    color: white;
   }
 }
