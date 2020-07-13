@@ -17,6 +17,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { CompanyInformationComponent } from './views/company-information/company-information.component';
 import { AdvantageComponent } from './components/advantage/advantage.component';
 import { SearchfieldComponent } from './components/searchfield/searchfield.component';
+import { CourseModalComponent } from './components/course-modal/course-modal.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SearchfieldComponent } from './components/searchfield/searchfield.compo
     CompanyInformationComponent,
     AdvantageComponent,
     SearchfieldComponent,
+    CourseModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

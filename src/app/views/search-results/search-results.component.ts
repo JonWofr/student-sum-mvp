@@ -9,6 +9,7 @@ import { Course } from '../../models/course';
 export class SearchResultsComponent implements OnInit {
   courses: Course[] = [];
   filteredCourses: Course[] = [];
+  selectedCourse: Course;
 
   constructor() {}
 
@@ -34,5 +35,16 @@ export class SearchResultsComponent implements OnInit {
 
   filterCoursesBySelectValue(courses: Course[], value: string): Course[] {
     return courses.filter((course) => course.university === value);
+  }
+
+  onClickCourseCard(course: Course) {
+    this.selectedCourse = course;
+
+    // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.
+    setTimeout(() => {
+      (document.querySelector(
+        'button#modal-trigger'
+      ) as HTMLButtonElement).click();
+    });
   }
 }

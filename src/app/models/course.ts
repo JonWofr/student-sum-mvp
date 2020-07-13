@@ -1,3 +1,5 @@
+import { CourseSection } from './course-section';
+
 export interface Course {
   id: string;
   name: string;
@@ -11,4 +13,5 @@ export interface Course {
   duration: number;
   reviewCount: number;
   university: string;
+  sections: CourseSection[];
 }

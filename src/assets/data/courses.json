@@ -14,7 +14,59 @@
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
     "reviewCount": 8,
-    "university": "hdm"
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Einführung",
+        "subSections": []
+      },
+      {
+        "name": "Problemlösende Agenten und Suchverfahren",
+        "subSections": [
+          {
+            "name": "Algorithmen für vollständige und lokale Suche (z.B. Genetischer Algorithums)"
+          }
+        ]
+      },
+      {
+        "name": "Kurzeinführung Wissenrepräsentation und Inferenz",
+        "subSections": []
+      },
+      {
+        "name": "Schließen mit Unsicherheit",
+        "subSections": [
+          {
+            "name": "Wahrscheinlichkeitstheorie, Bayes-Netze"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (überwacht)",
+        "subSections": [
+          {
+            "name": "Entscheidungsbäume"
+          },
+          {
+            "name": "Neuronale Netze: SLP, MLP, Grundlagen Deep Learning"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (unüberwacht)",
+        "subSections": [
+          {
+            "name": "Ähnlichkeitsmaße"
+          },
+          {
+            "name": "Clusteringalgorithmen"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (bestärkend)",
+        "subSections": []
+      }
+    ]
   },
   {
     "id": "2",

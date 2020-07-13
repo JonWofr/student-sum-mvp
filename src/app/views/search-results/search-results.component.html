@@ -8,8 +8,22 @@
         *ngFor="let course of filteredCourses"
         class="col-md-4 col-sm-6 mb-4"
       >
-        <app-course-card [course]="course"></app-course-card>
+        <app-course-card
+          [course]="course"
+          (click)="onClickCourseCard(course)"
+        ></app-course-card>
       </div>
     </div>
   </div>
 </div>
+<button
+  id="modal-trigger"
+  class="d-none"
+  type="button"
+  data-toggle="modal"
+  data-target="#courseModal"
+></button>
+<app-course-modal
+  *ngIf="selectedCourse"
+  [selectedCourse]="selectedCourse"
+></app-course-modal>

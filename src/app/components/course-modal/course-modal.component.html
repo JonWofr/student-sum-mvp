@@ -1,0 +1,83 @@
+<div class="modal fade" id="courseModal" tabindex="-1" data-backdrop="static">
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Steckbrief der Zusammenfassung</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="cotainer-fluid">
+          <div class="mt-4">
+            <h6>
+              Allgemeines:
+            </h6>
+            <div>
+              <span class="font-weight-bold">Titel:</span>
+              {{ selectedCourse.name }}
+            </div>
+            <div>
+              <span class="font-weight-bold">Autor:</span>
+              {{ selectedCourse.author }}
+            </div>
+            <div>
+              <span class="font-weight-bold">Laufzeit:</span>
+              {{ selectedCourse.duration }} Min.
+            </div>
+          </div>
+          <div class="mt-4">
+            <h6>
+              Beschreibung der Zusammenfassung:
+            </h6>
+            <div>
+              {{ selectedCourse.description }}
+            </div>
+          </div>
+          <div class="mt-4">
+            <h6>
+              Inhaltsangabe:
+            </h6>
+            <ul style="list-style: none; padding-left: 0px;">
+              <li
+                *ngFor="
+                  let section of selectedCourse.sections;
+                  index as sectionIndex
+                "
+              >
+                {{ sectionIndex + 1 }}. {{ section.name }}
+                <ul
+                  style="list-style: none;"
+                  *ngIf="section.subSections.length > 0"
+                >
+                  <li
+                    *ngFor="
+                      let subSection of section.subSections;
+                      index as subSectionIndex
+                    "
+                  >
+                    {{ sectionIndex + 1 }}.{{ subSectionIndex + 1 }}.
+                    {{ subSection.name }}
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h6>
+              Vorschau:
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
