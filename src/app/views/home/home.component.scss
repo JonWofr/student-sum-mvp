@@ -6,12 +6,11 @@ div.home-banner-top {
   flex-direction: column;
   justify-content: center;
   background-image: url("/assets/geometry.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 
   div.banner-box {
-    padding: 5%;
+    padding: 3%;
     margin-left: 14%;
     max-width: 95%;
     background-color: #edf2f4;

@@ -18,6 +18,7 @@ import { CompanyInformationComponent } from './views/company-information/company
 import { AdvantageComponent } from './components/advantage/advantage.component';
 import { SearchfieldComponent } from './components/searchfield/searchfield.component';
 import { CourseModalComponent } from './components/course-modal/course-modal.component';
+import { BuyFormComponent } from './views/buy-form/buy-form.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CourseModalComponent } from './components/course-modal/course-modal.com
     AdvantageComponent,
     SearchfieldComponent,
     CourseModalComponent,
+    BuyFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
