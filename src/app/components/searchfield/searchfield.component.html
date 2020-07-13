@@ -9,8 +9,9 @@
     (change)="onChangeSelectValue(universitySelect.value, $event)"
     class="custom-select"
     id="inputGroupSelect01"
+    [value]="selectValue"
   >
-    <option selected>Wähle aus...</option>
+    <option value="">Wähle aus...</option>
     <option value="hdm">Hochschule der Medien</option>
   </select>
 </div>

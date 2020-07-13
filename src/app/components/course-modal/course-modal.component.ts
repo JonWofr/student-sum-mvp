@@ -9,7 +9,14 @@ import { Course } from 'src/app/models/course';
 export class CourseModalComponent implements OnInit {
   @Input() selectedCourse: Course;
 
+  starValues = [1, 2, 3, 4, 5];
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClickPurchaseButton(mouseEvent: MouseEvent) {
+    mouseEvent.stopPropagation();
+    mouseEvent.preventDefault();
+  }
 }

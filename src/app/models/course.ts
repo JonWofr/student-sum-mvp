@@ -14,4 +14,5 @@ export interface Course {
   reviewCount: number;
   university: string;
   sections: CourseSection[];
+  previewVideo: string;
 }
