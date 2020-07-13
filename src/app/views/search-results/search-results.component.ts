@@ -17,22 +17,23 @@ export class SearchResultsComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
+    const university = this.activatedRoute.snapshot.paramMap.get('university');
+    this.selectValue = university !== null ? university : '';
+    this.shouldShowSpinner = true;
+
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', (event: any) => {
       this.shouldShowSpinner = false;
       this.courses = event.target.response;
       this.filteredCourses = this.filterCoursesBySelectValue(
         this.courses,
-        'hdm'
+        university
       );
     });
     xhr.addEventListener('error', (error) => console.error(error));
     xhr.open('GET', '/assets/data/courses.json', true);
     xhr.responseType = 'json';
     xhr.send();
-    this.shouldShowSpinner = true;
-    const university = this.activatedRoute.snapshot.paramMap.get('university');
-    this.selectValue = university !== null ? university : '';
   }
 
   onChangeSelectValue(value: string): void {

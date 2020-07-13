@@ -1,10 +1,12 @@
 <div class="container">
-  <app-searchfield
-    [selectValue]="selectValue"
-    (changeSelectValue)="onChangeSelectValue($event)"
-  ></app-searchfield>
   <div class="mt-4">
-    <div class="row">
+    <app-searchfield
+      [selectValue]="selectValue"
+      (changeSelectValue)="onChangeSelectValue($event)"
+    ></app-searchfield>
+  </div>
+  <div class="mt-4">
+    <div *ngIf="filteredCourses.length > 0" class="row">
       <div
         *ngFor="let course of filteredCourses"
         class="col-md-4 col-sm-6 mb-4"
@@ -14,6 +16,14 @@
           (click)="onClickCourseCard(course)"
         ></app-course-card>
       </div>
+    </div>
+    <div
+      *ngIf="
+        filteredCourses.length === 0 && !shouldShowSpinner && selectValue !== ''
+      "
+    >
+      Leider gibt es für die ausgewählte Hochschule noch keine
+      Zusammenfassungen! Schaue in Kürze nochmal vorbei!
     </div>
   </div>
 </div>
