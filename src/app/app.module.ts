@@ -11,23 +11,25 @@ import { SearchResultsComponent } from './views/search-results/search-results.co
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { VideoContainerComponent } from './components/video-container/video-container.component';
+import { CourseCardComponent } from './components/course-card/course-card.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { CompanyInformationComponent } from './views/company-information/company-information.component';
 import { AdvantageComponent } from './components/advantage/advantage.component';
+import { SearchfieldComponent } from './components/searchfield/searchfield.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    VideoContainerComponent,
+    CourseCardComponent,
     BannerComponent,
     HomeComponent,
     SearchResultsComponent,
     ContactComponent,
     CompanyInformationComponent,
     AdvantageComponent,
+    SearchfieldComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

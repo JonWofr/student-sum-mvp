@@ -1,13 +1,21 @@
-<div class="card border-light bg-light shadow-sm">
-  <img
-    class="card-img-top"
-    style="height: 250px; object-fit: cover;"
-    [src]="course.thumbnail"
-    alt=""
-  />
+<div class="card bg-light shadow-sm">
+  <div class="thumbnail-container">
+    <div class="thumbnail-blur-overlay">
+      <img class="card-img-top" [src]="course.thumbnail" alt="" />
+    </div>
+    <div class="thumbnail-overlay">
+      <h3 class="text-light">
+        {{ course.lecture.name }}
+      </h3>
+      <div class="text-light font-weight-light">
+        Bei
+        {{ course.lecture.lecturer }}
+      </div>
+    </div>
+  </div>
   <div class="card-body">
-    <h5 class="card-title">{{ course.name }}</h5>
-    <div class="font-weight-light mb-1">{{ course.author }}</div>
+    <h4 class="card-title">{{ course.name }}</h4>
+    <div class="card-subtitle text-muted">{{ course.author }}</div>
     <p class="card-text">
       {{ course.description }}
     </p>
@@ -61,8 +69,16 @@
       <div class="col-auto">{{ course.duration }} Min.</div>
       <div class="col-auto">
         <div class="row mx-n1 align-items-center">
-          <div class="col-auto px-1 price">{{ course.price }}€</div>
-          <div class="col-auto px-1 font-weight-bold">
+          <div
+            class="col-auto px-1 price"
+            style="font-size: 0.8rem; text-decoration: line-through;"
+          >
+            {{ course.price }}€
+          </div>
+          <div
+            class="col-auto px-1 font-weight-bold"
+            style="font-size: 1.2rem;"
+          >
             {{ course.discountedPrice }}€
           </div>
         </div>

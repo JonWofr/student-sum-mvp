@@ -10,4 +10,5 @@ export interface Course {
   thumbnail: string;
   duration: number;
   reviewCount: number;
+  university: string;
 }

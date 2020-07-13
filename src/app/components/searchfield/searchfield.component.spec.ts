@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VideoContainerComponent } from './video-container.component';
+import { SearchfieldComponent } from './searchfield.component';
 
-describe('VideoContainerComponent', () => {
-  let component: VideoContainerComponent;
-  let fixture: ComponentFixture<VideoContainerComponent>;
+describe('SearchfieldComponent', () => {
+  let component: SearchfieldComponent;
+  let fixture: ComponentFixture<SearchfieldComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VideoContainerComponent ]
+      declarations: [ SearchfieldComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VideoContainerComponent);
+    fixture = TestBed.createComponent(SearchfieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
