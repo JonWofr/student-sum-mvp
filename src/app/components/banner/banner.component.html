@@ -1,3 +1,7 @@
-<div class="card card-body text-center">
-  Nur für kurze Zeit! Exam-Summer-Sale 40% Rabatt auf alle Zusammenfassungen!
+<div *ngIf="display" class="banner-wrapper">
+  <div class="card card-body text-center">
+    Nur für kurze Zeit! Exam-Summer-Sale 40% Rabatt auf alle Zusammenfassungen!
+  </div>
+
+  <img (click)="display = false" src="/assets/x-mark.png" alt="" />
 </div>

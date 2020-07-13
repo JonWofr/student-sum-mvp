@@ -2,4 +2,16 @@
   background-color: #ef233c;
   color: white;
   font-weight: 700;
+  border-radius: 0;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  height: 20px;
+  right: 1%;
+  top: 7%;
 }
