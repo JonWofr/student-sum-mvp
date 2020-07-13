@@ -3,6 +3,8 @@
   color: white;
   font-weight: 700;
   border-radius: 0;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .banner-wrapper {
@@ -13,5 +15,6 @@ img {
   position: absolute;
   height: 20px;
   right: 1%;
-  top: 7%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
