@@ -19,7 +19,7 @@
     <p class="card-text">
       {{ course.description }}
     </p>
-    <div class="row mx-n1 my-3 align-items-center">
+    <div class="row mx-n1 my-3 align-items-center" style="cursor: pointer;">
       <div *ngFor="let starValue of starValues" class="col-auto px-1">
         <svg
           *ngIf="course.rating >= starValue"
@@ -70,7 +70,7 @@
       <div class="col-auto">
         <div class="row mx-n1 align-items-center">
           <div
-            class="col-auto px-1 price"
+            class="col-auto px-1"
             style="font-size: 0.8rem; text-decoration: line-through;"
           >
             {{ course.price }}€

@@ -9,6 +9,10 @@ import { CompanyInformationComponent } from './views/company-information/company
 
 const routes: Routes = [
   {
+    path: 'search-results/:university',
+    component: SearchResultsComponent,
+  },
+  {
     path: 'search-results',
     component: SearchResultsComponent,
   },

@@ -1,0 +1,11 @@
+:host {
+  display: block;
+
+  & > div.spinner-border {
+    position: fixed;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+
+    color: #ef233c;
+  }
+}
