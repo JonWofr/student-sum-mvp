@@ -7,5 +7,8 @@
         ]
       }
     }
+  },
+  "projects": {
+    "prod": "studary-98dad"
   }
 }
