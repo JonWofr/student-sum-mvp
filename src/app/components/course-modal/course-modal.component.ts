@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from 'src/app/models/course';
 import { Router } from '@angular/router';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-course-modal',
@@ -17,9 +18,17 @@ export class CourseModalComponent implements OnInit {
   ngOnInit(): void {}
 
   onClickPurchaseButton(mouseEvent: MouseEvent) {
-    (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
-    this.router.navigateByUrl('warenkorb');
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
+
+    firebase
+      .analytics()
+      .logEvent(
+        'Clicked modal purchase button of course with name: ' +
+          this.selectedCourse.name
+      );
+
+    (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
+    this.router.navigateByUrl('warenkorb');
   }
 }

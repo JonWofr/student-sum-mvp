@@ -4,4 +4,8 @@ nav {
   > * {
     color: white;
   }
+
+  & > a {
+    cursor: pointer;
+  }
 }

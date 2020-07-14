@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../models/course';
 import { ActivatedRoute } from '@angular/router';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-search-results',
@@ -47,6 +48,12 @@ export class SearchResultsComponent implements OnInit {
 
   onClickCourseCard(course: Course) {
     this.selectedCourse = course;
+
+    firebase
+      .analytics()
+      .logEvent(
+        'Clicked on course card with name: ' + this.selectedCourse.name
+      );
 
     // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.
     setTimeout(() => {
