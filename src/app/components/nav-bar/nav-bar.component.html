@@ -1,8 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" style="color: white !important;" routerLink=""
+  <a
+    class="navbar-brand"
+    style="color: white !important;"
+    (click)="onClickLink('')"
     >Studary</a
   >
-  <a style="color: white !important; float: right;" routerLink="/warenkorb">
+  <a
+    style="color: white !important; float: right;"
+    (click)="onClickLink('warenkorb')"
+  >
     Über Uns</a
   >
 </nav>

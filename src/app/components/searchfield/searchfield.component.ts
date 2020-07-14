@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-searchfield',
@@ -16,6 +17,10 @@ export class SearchfieldComponent implements OnInit {
   onChangeSelectValue(value: string, event: Event) {
     event.stopPropagation();
     event.preventDefault();
+
+    firebase
+      .analytics()
+      .logEvent('Changed university select value to: ' + value);
 
     this.changeSelectValue.emit(value);
   }
