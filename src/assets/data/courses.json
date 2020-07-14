@@ -220,8 +220,8 @@
       "name": "Algorithmen und Datenstrukturen",
       "lecturer": "Prof. Dr. Christian Becker-Asano"
     },
-    "price": 48,
-    "discountedPrice": 29,
+    "price": 50,
+    "discountedPrice": 30,
     "rating": 0,
     "thumbnail": "/assets/code.jpg",
     "duration": "N/A",
@@ -353,19 +353,19 @@
   },
   {
     "id": "6",
-    "name": "Künstliche Intelligenz kurz & knapp",
-    "author": "Nico Burkart",
-    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "name": "IT Security - Nur das Nötigste!",
+    "author": "Jonas Wolfram",
+    "description": "Video-Zusammenfassung von IT Security. Nur das Nötigste!",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "IT Security",
+      "lecturer": "Prof. Dr. Joachim Charzinski"
     },
-    "price": 42,
+    "price": 50,
     "discountedPrice": 30,
-    "rating": 4.7,
-    "thumbnail": "/assets/images/ki.png",
-    "duration": 250,
-    "reviewCount": 8,
+    "rating": 0,
+    "thumbnail": "/assets/hacker.jpg",
+    "duration": "N/A",
+    "reviewCount": 0,
     "university": "hdm",
     "sections": [
       {
