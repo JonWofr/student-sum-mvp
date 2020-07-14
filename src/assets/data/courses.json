@@ -8,8 +8,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 42,
-    "discountedPrice": 25,
+    "price": 50,
+    "discountedPrice": 30,
     "rating": 4,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -67,7 +67,7 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/KI_Trim.mp4"
   },
   {
     "id": "2",
@@ -143,73 +143,96 @@
   },
   {
     "id": "3",
-    "name": "Künstliche Intelligenz kurz & knapp",
+    "name": "Minimaler Aufwand maximales Ergebnis",
     "author": "Nico Burkart",
-    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "description": "Falls es euch wie den meisten geht und ihr in Mathe einfach nicht durchblickt, zeige ich euch auf verständliche und anschauliche Weise alles, was ihr wissen müsst.",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "Angewandte Mathematik",
+      "lecturer": "Prof. Dr. Jens-Uwe Hahn"
     },
-    "price": 42,
-    "discountedPrice": 30,
-    "rating": 4.7,
-    "thumbnail": "/assets/images/ki.png",
-    "duration": 250,
-    "reviewCount": 8,
+    "price": 33,
+    "discountedPrice": 20,
+    "rating": 4.4,
+    "thumbnail": "/assets/images/angewandte-mathe.jpg",
+    "duration": 180,
+    "reviewCount": 4,
     "university": "hdm",
     "sections": [
       {
-        "name": "Einführung",
-        "subSections": []
-      },
-      {
-        "name": "Problemlösende Agenten und Suchverfahren",
+        "name": "Algorithmische Graphentheorie",
         "subSections": [
           {
-            "name": "Algorithmen für vollständige und lokale Suche (z.B. Genetischer Algorithums)"
-          }
-        ]
-      },
-      {
-        "name": "Kurzeinführung Wissenrepräsentation und Inferenz",
-        "subSections": []
-      },
-      {
-        "name": "Schließen mit Unsicherheit",
-        "subSections": [
-          {
-            "name": "Wahrscheinlichkeitstheorie, Bayes-Netze"
-          }
-        ]
-      },
-      {
-        "name": "Maschinelles Lernen (überwacht)",
-        "subSections": [
-          {
-            "name": "Entscheidungsbäume"
+            "name": "Minimale Spannbäume"
           },
           {
-            "name": "Neuronale Netze: SLP, MLP, Grundlagen Deep Learning"
-          }
-        ]
-      },
-      {
-        "name": "Maschinelles Lernen (unüberwacht)",
-        "subSections": [
-          {
-            "name": "Ähnlichkeitsmaße"
+            "name": "Chinese Postman Problem"
           },
           {
-            "name": "Clusteringalgorithmen"
+            "name": "Travelling Salesman Problem"
           }
         ]
       },
       {
-        "name": "Maschinelles Lernen (bestärkend)",
-        "subSections": []
+        "name": "Kombinatorik",
+        "subSections": [
+          {
+            "name": "Binomialkoeffizienten"
+          },
+          {
+            "name": "Permutationen"
+          }
+        ]
+      },
+      {
+        "name": "Wahrscheinlichkeitsrechnung",
+        "subSections": [
+          {
+            "name": "Ereignisräume"
+          },
+          {
+            "name": "Wahrscheinlichkeitsverteilungen"
+          },
+          {
+            "name": "Bedingte Wahrscheinlichkeit"
+          },
+          {
+            "name": "Wahrscheinlichkeitsdichten"
+          }
+        ]
+      },
+      {
+        "name": "Einführung in die Statistik",
+        "subSections": [
+          {
+            "name": "Beschreibende Statistik"
+          },
+          {
+            "name": "Schließende Statistik"
+          },
+          {
+            "name": "Punktschätzung"
+          },
+          {
+            "name": "Hypothesentests"
+          }
+        ]
+      },
+      {
+        "name": "Gewöhnliche Differentialgleichungen",
+        "subSections": [
+          {
+            "name": "Elementar lösbare DGLn erster Ordnung"
+          },
+          {
+            "name": "Lineare DGLn n.ter Ordnung mit konstanten Koeffizienten"
+          },
+          {
+            "name": "Numerische Lösungsverfahren"
+          }
+        ]
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/Wahrscheinlichkeitsbäume.mp4"
   },
   {
     "id": "4",
