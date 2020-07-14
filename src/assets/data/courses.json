@@ -9,7 +9,7 @@
       "lecturer": "Prof. Dr. Maucher"
     },
     "price": 42,
-    "discountedPrice": 30,
+    "discountedPrice": 25,
     "rating": 4,
     "thumbnail": "/assets/images/ki.png",
     "duration": 250,
@@ -71,19 +71,19 @@
   },
   {
     "id": "2",
-    "name": "Künstliche Intelligenz kurz & knapp",
+    "name": "Unimathe mal verständlich",
     "author": "Nico Burkart",
-    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "description": "Mathematik des ersten Semesters einfach mit Beispielen erklärt.",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "Mathematik 1",
+      "lecturer": "Prof. Dr. Jens-Uwe-Hahn"
     },
     "price": 42,
-    "discountedPrice": 30,
+    "discountedPrice": 25,
     "rating": 4.7,
-    "thumbnail": "/assets/images/ki.png",
-    "duration": 250,
-    "reviewCount": 8,
+    "thumbnail": "/assets/math.jpg",
+    "duration": 856,
+    "reviewCount": 6,
     "university": "hdm",
     "sections": [
       {
@@ -91,53 +91,55 @@
         "subSections": []
       },
       {
-        "name": "Problemlösende Agenten und Suchverfahren",
-        "subSections": [
-          {
-            "name": "Algorithmen für vollständige und lokale Suche (z.B. Genetischer Algorithums)"
-          }
-        ]
-      },
-      {
-        "name": "Kurzeinführung Wissenrepräsentation und Inferenz",
+        "name": "Codierung von Zahlen in digitalen Rechnern",
         "subSections": []
       },
       {
-        "name": "Schließen mit Unsicherheit",
-        "subSections": [
-          {
-            "name": "Wahrscheinlichkeitstheorie, Bayes-Netze"
-          }
-        ]
+        "name": "Logische Grundlagen",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (überwacht)",
-        "subSections": [
-          {
-            "name": "Entscheidungsbäume"
-          },
-          {
-            "name": "Neuronale Netze: SLP, MLP, Grundlagen Deep Learning"
-          }
-        ]
+        "name": "Beweistechniken",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (unüberwacht)",
-        "subSections": [
-          {
-            "name": "Ähnlichkeitsmaße"
-          },
-          {
-            "name": "Clusteringalgorithmen"
-          }
-        ]
+        "name": "Relationen, Abbildungen, Funktionen",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (bestärkend)",
+        "name": "Algebraische Grundstrukturen",
+        "subSections": []
+      },
+      {
+        "name": "Komplexe Zahlen",
+        "subSections": []
+      },
+      {
+        "name": "Vektorräume und lineare Algebra ",
+        "subSections": []
+      },
+      {
+        "name": "Lineare Gleichungssysteme",
+        "subSections": []
+      },
+      {
+        "name": "Folgen und Reihen",
+        "subSections": []
+      },
+      {
+        "name": "Grenzwerte von Folgen und Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Stetigkeit und Differenzierbarkeit von Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Integration",
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/Mathe1.mp4"
   },
   {
     "id": "3",
@@ -211,19 +213,19 @@
   },
   {
     "id": "4",
-    "name": "Künstliche Intelligenz kurz & knapp",
-    "author": "Nico Burkart",
-    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "name": "Algorithmen und Datenstrukturen",
+    "author": "Jonas Wolfram",
+    "description": "Eine Zusammenfassung von Algorithmen und Datenstrukturen",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "Algorithmen und Datenstrukturen",
+      "lecturer": "Prof. Dr. Christian Becker-Asano"
     },
-    "price": 42,
-    "discountedPrice": 30,
-    "rating": 4.7,
-    "thumbnail": "/assets/images/ki.png",
-    "duration": 250,
-    "reviewCount": 8,
+    "price": 48,
+    "discountedPrice": 29,
+    "rating": 0,
+    "thumbnail": "/assets/code.jpg",
+    "duration": "N/A",
+    "reviewCount": 0,
     "university": "hdm",
     "sections": [
       {
@@ -281,19 +283,19 @@
   },
   {
     "id": "5",
-    "name": "Künstliche Intelligenz kurz & knapp",
-    "author": "Nico Burkart",
+    "name": "Rechnernetze",
+    "author": "Jonas Wolfram",
     "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "Rechnernetze",
+      "lecturer": "Prof. Roland Kiefer"
     },
     "price": 42,
-    "discountedPrice": 30,
-    "rating": 4.7,
-    "thumbnail": "/assets/images/ki.png",
-    "duration": 250,
-    "reviewCount": 8,
+    "discountedPrice": 25,
+    "rating": 0,
+    "thumbnail": "/assets/cyberspace.jpg",
+    "duration": "N/A",
+    "reviewCount": 0,
     "university": "hdm",
     "sections": [
       {
