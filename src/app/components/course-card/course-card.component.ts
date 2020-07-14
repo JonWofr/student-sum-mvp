@@ -7,11 +7,25 @@ import { Course } from '../../models/course';
   styleUrls: ['./course-card.component.scss'],
 })
 export class CourseCardComponent implements OnInit {
-  @Input() course: Course;
+  @Input() set course(course: Course) {
+    this.duration = this.calculateDuration(course.duration);
+    this._course = course;
+  }
 
+  _course: Course;
+  duration: string;
   starValues = [1, 2, 3, 4, 5];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  calculateDuration(durationInMin): string {
+    if (durationInMin === 'N/A') {
+      return 'N/A';
+    }
+    return (
+      Math.floor(durationInMin / 60) + ' Std. ' + (durationInMin % 60) + ' Min.'
+    );
+  }
 }

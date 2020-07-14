@@ -1,28 +1,31 @@
 <div class="card bg-light shadow-sm">
   <div class="thumbnail-container">
     <div class="thumbnail-blur-overlay">
-      <img class="card-img-top" [src]="course.thumbnail" alt="" />
+      <img class="card-img-top" [src]="_course.thumbnail" alt="" />
     </div>
     <div class="thumbnail-overlay">
       <h3 class="text-light">
-        {{ course.lecture.name }}
+        {{ _course.lecture.name }}
       </h3>
       <div class="text-light font-weight-light">
         Bei
-        {{ course.lecture.lecturer }}
+        {{ _course.lecture.lecturer }}
       </div>
+    </div>
+    <div *ngIf="!_course.isAvailable" class="badge badge-light">
+      In Kürze verfügbar
     </div>
   </div>
   <div class="card-body">
-    <h4 class="card-title">{{ course.name }}</h4>
-    <div class="card-subtitle text-muted">{{ course.author }}</div>
+    <h4 class="card-title">{{ _course.name }}</h4>
+    <div class="card-subtitle text-muted">{{ _course.author }}</div>
     <p class="card-text">
-      {{ course.description }}
+      {{ _course.description }}
     </p>
     <div class="row mx-n1 my-3 align-items-center" style="cursor: pointer;">
       <div *ngFor="let starValue of starValues" class="col-auto px-1">
         <svg
-          *ngIf="course.rating >= starValue"
+          *ngIf="_course.rating >= starValue"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -34,7 +37,7 @@
           />
         </svg>
         <svg
-          *ngIf="course.rating > starValue - 1 && course.rating < starValue"
+          *ngIf="_course.rating > starValue - 1 && _course.rating < starValue"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -46,7 +49,7 @@
           />
         </svg>
         <svg
-          *ngIf="course.rating <= starValue - 1"
+          *ngIf="_course.rating <= starValue - 1"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -59,27 +62,27 @@
         </svg>
       </div>
       <div class="col-auto px-1 font-weight-bold">
-        {{ course.rating }}
+        {{ _course.rating }}
       </div>
       <div class="col-auto px-1 font-weight-light">
-        ({{ course.reviewCount }})
+        ({{ _course.reviewCount }})
       </div>
     </div>
     <div class="row justify-content-between align-items-center">
-      <div class="col-auto">{{ course.duration }} Min.</div>
+      <div class="col-auto">{{ duration }}</div>
       <div class="col-auto">
         <div class="row mx-n1 align-items-center">
           <div
             class="col-auto px-1"
             style="font-size: 0.8rem; text-decoration: line-through;"
           >
-            {{ course.price }}€
+            {{ _course.price }}€
           </div>
           <div
             class="col-auto px-1 font-weight-bold"
             style="font-size: 1.2rem;"
           >
-            {{ course.discountedPrice }}€
+            {{ _course.discountedPrice }}€
           </div>
         </div>
       </div>

@@ -67,7 +67,8 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/KI_Trim.mp4"
+    "previewVideo": "assets/videos/KI_Trim.mp4",
+    "isAvailable": true
   },
   {
     "id": "2",
@@ -139,7 +140,8 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/Mathe1.mp4"
+    "previewVideo": "assets/videos/Mathe1.mp4",
+    "isAvailable": true
   },
   {
     "id": "3",
@@ -232,7 +234,8 @@
         ]
       }
     ],
-    "previewVideo": "assets/videos/Wahrscheinlichkeitsbäume.mp4"
+    "previewVideo": "assets/videos/Wahrscheinlichkeitsbäume.mp4",
+    "isAvailable": true
   },
   {
     "id": "4",
@@ -302,7 +305,8 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
+    "isAvailable": false
   },
   {
     "id": "5",
@@ -372,7 +376,8 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
+    "isAvailable": false
   },
   {
     "id": "6",
@@ -442,6 +447,7 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4"
+    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
+    "isAvailable": false
   }
 ]

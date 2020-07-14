@@ -15,4 +15,5 @@ export interface Course {
   university: string;
   sections: CourseSection[];
   previewVideo: string;
+  isAvailable: boolean;
 }

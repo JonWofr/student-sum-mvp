@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../models/course';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import * as firebase from 'firebase';
 
 @Component({
@@ -15,7 +15,7 @@ export class SearchResultsComponent implements OnInit {
   selectedCourse: Course;
   shouldShowSpinner = false;
 
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     const university = this.activatedRoute.snapshot.paramMap.get('university');
@@ -55,11 +55,15 @@ export class SearchResultsComponent implements OnInit {
         'Clicked on course card with name: ' + this.selectedCourse.name
       );
 
-    // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.
-    setTimeout(() => {
-      (document.querySelector(
-        'button#modal-trigger'
-      ) as HTMLButtonElement).click();
-    });
+    if (course.isAvailable) {
+      // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.
+      setTimeout(() => {
+        (document.querySelector(
+          'button#modal-trigger'
+        ) as HTMLButtonElement).click();
+      });
+    } else {
+      this.router.navigateByUrl('/warenkorb');
+    }
   }
 }
