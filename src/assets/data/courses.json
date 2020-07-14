@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Künstliche Intelligenz kurz & knapp",
     "author": "Nico Burkart",
-    "description": "Hier habe ich meine Zusammenfassung innerhalb eines Videos visualisiert",
+    "description": "Ich habe das umfassende Themengebiet KI für dich aufs Wesentliche runtergebrochen.",
     "lecture": {
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
@@ -11,7 +11,7 @@
     "price": 50,
     "discountedPrice": 30,
     "rating": 4,
-    "thumbnail": "/assets/images/ki.png",
+    "thumbnail": "/assets/images/kuenstliche-intelligenz.jpg",
     "duration": 250,
     "reviewCount": 8,
     "university": "hdm",
@@ -391,7 +391,7 @@
     "price": 50,
     "discountedPrice": 30,
     "rating": 0,
-    "thumbnail": "/assets/hacker.jpg",
+    "thumbnail": "/assets/images/it-security.jpg",
     "duration": "N/A",
     "reviewCount": 0,
     "university": "hdm",

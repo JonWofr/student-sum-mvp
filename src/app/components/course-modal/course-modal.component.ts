@@ -22,6 +22,21 @@ export class CourseModalComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onClickCloseButton(mouseEvent: MouseEvent) {
+    mouseEvent.stopPropagation();
+    mouseEvent.preventDefault();
+
+    firebase
+      .analytics()
+      .logEvent(
+        'Clicked modal close button of course with name: ' +
+          this._selectedCourse.name
+      );
+
+    (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
+    (document.querySelector('video') as HTMLVideoElement).pause();
+  }
+
   onClickPurchaseButton(mouseEvent: MouseEvent) {
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
@@ -30,7 +45,7 @@ export class CourseModalComponent implements OnInit {
       .analytics()
       .logEvent(
         'Clicked modal purchase button of course with name: ' +
-          this.selectedCourse.name
+          this._selectedCourse.name
       );
 
     (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
