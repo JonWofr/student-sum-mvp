@@ -1,74 +1,94 @@
 [
   {
-    "id": "1",
-    "name": "Künstliche Intelligenz kurz & knapp",
+    "id": "8",
+    "name": "Software Entwicklung 1 zusammengefasst",
     "author": "Nico Burkart",
-    "description": "Ich habe das umfassende Themengebiet KI für dich aufs Wesentliche runtergebrochen.",
+    "description": "Grundlagenwissen Java, anschaulich erläutert.",
     "lecture": {
-      "name": "Künstliche Intelligenz",
-      "lecturer": "Prof. Dr. Maucher"
+      "name": "Software Entwicklung 1",
+      "lecturer": "Prof. Dr. Martin Goik"
     },
-    "price": 50,
-    "discountedPrice": 30,
-    "rating": 4,
-    "thumbnail": "/assets/images/kuenstliche-intelligenz.jpg",
-    "duration": 250,
-    "reviewCount": 8,
+    "price": 40,
+    "discountedPrice": 24,
+    "rating": 4.8,
+    "thumbnail": "/assets/images/web-development.jpg",
+    "duration": 180,
+    "reviewCount": 7,
     "university": "hdm",
     "sections": [
       {
-        "name": "Einführung",
+        "name": "Web Grundlagen",
         "subSections": []
       },
       {
-        "name": "Problemlösende Agenten und Suchverfahren",
+        "name": "HTML Seiteninhalt strukturieren",
         "subSections": [
           {
-            "name": "Algorithmen für vollständige und lokale Suche (z.B. Genetischer Algorithums)"
+            "name": "Listen"
+          },
+          {
+            "name": "Tabellen"
+          },
+          {
+            "name": "Strukturelemente"
+          },
+          {
+            "name": "Entities"
           }
         ]
       },
       {
-        "name": "Kurzeinführung Wissenrepräsentation und Inferenz",
+        "name": "HTML Zeilen vs. Blockelemente",
         "subSections": []
       },
       {
-        "name": "Schließen mit Unsicherheit",
-        "subSections": [
-          {
-            "name": "Wahrscheinlichkeitstheorie, Bayes-Netze"
-          }
-        ]
+        "name": "HTML Verknüpfung von Webseiten",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (überwacht)",
-        "subSections": [
-          {
-            "name": "Entscheidungsbäume"
-          },
-          {
-            "name": "Neuronale Netze: SLP, MLP, Grundlagen Deep Learning"
-          }
-        ]
+        "name": "HTML Textformatierung",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (unüberwacht)",
-        "subSections": [
-          {
-            "name": "Ähnlichkeitsmaße"
-          },
-          {
-            "name": "Clusteringalgorithmen"
-          }
-        ]
+        "name": "HTML Einbinden von Ressourcen",
+        "subSections": []
       },
       {
-        "name": "Maschinelles Lernen (bestärkend)",
+        "name": "CSS Grundlagen & Regeln",
+        "subSections": []
+      },
+      {
+        "name": "CSS Selektoren",
+        "subSections": []
+      },
+      {
+        "name": "CSS Eigenschaften Werte Vererbung",
+        "subSections": []
+      },
+      {
+        "name": "CSS Farben und Transparenz",
+        "subSections": []
+      },
+      {
+        "name": "CSS Variablen",
+        "subSections": []
+      },
+      {
+        "name": "CSS Hintergrundeffekte",
+        "subSections": []
+      },
+      {
+        "name": "CSS Farbverlaeufe",
+        "subSections": []
+      },
+      {
+        "name": "CSS Box Model",
         "subSections": []
       }
     ],
     "previewVideo": "assets/videos/KI_Trim.mp4",
-    "isAvailable": true
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
   },
   {
     "id": "2",
@@ -141,7 +161,173 @@
       }
     ],
     "previewVideo": "assets/videos/Mathe1.mp4",
-    "isAvailable": true
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
+  },
+  {
+    "id": "7",
+    "name": "Grundlagen der Webentwicklung",
+    "author": "Nico Burkart",
+    "description": "In diesem Kurs zeig ich dir alles wichtige, was du an Grundlagenwissen benötigst.",
+    "lecture": {
+      "name": "Web Development",
+      "lecturer": "Prof. Dr. Dirk Heuzeroth"
+    },
+    "price": 25,
+    "discountedPrice": 15,
+    "rating": 4.4,
+    "thumbnail": "/assets/images/web-development.jpg",
+    "duration": 180,
+    "reviewCount": 7,
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Web Grundlagen",
+        "subSections": []
+      },
+      {
+        "name": "HTML Seiteninhalt strukturieren",
+        "subSections": [
+          {
+            "name": "Listen"
+          },
+          {
+            "name": "Tabellen"
+          },
+          {
+            "name": "Strukturelemente"
+          },
+          {
+            "name": "Entities"
+          }
+        ]
+      },
+      {
+        "name": "HTML Zeilen vs. Blockelemente",
+        "subSections": []
+      },
+      {
+        "name": "HTML Verknüpfung von Webseiten",
+        "subSections": []
+      },
+      {
+        "name": "HTML Textformatierung",
+        "subSections": []
+      },
+      {
+        "name": "HTML Einbinden von Ressourcen",
+        "subSections": []
+      },
+      {
+        "name": "CSS Grundlagen & Regeln",
+        "subSections": []
+      },
+      {
+        "name": "CSS Selektoren",
+        "subSections": []
+      },
+      {
+        "name": "CSS Eigenschaften Werte Vererbung",
+        "subSections": []
+      },
+      {
+        "name": "CSS Farben und Transparenz",
+        "subSections": []
+      },
+      {
+        "name": "CSS Variablen",
+        "subSections": []
+      },
+      {
+        "name": "CSS Hintergrundeffekte",
+        "subSections": []
+      },
+      {
+        "name": "CSS Farbverlaeufe",
+        "subSections": []
+      },
+      {
+        "name": "CSS Box Model",
+        "subSections": []
+      }
+    ],
+    "previewVideo": "assets/videos/KI_Trim.mp4",
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
+  },
+  {
+    "id": "2",
+    "name": "Unimathe mal verständlich",
+    "author": "Nico Burkart",
+    "description": "Mathematik des ersten Semesters einfach mit Beispielen erklärt.",
+    "lecture": {
+      "name": "Mathematik 1",
+      "lecturer": "Prof. Dr. Jens-Uwe-Hahn"
+    },
+    "price": 42,
+    "discountedPrice": 25,
+    "rating": 4.7,
+    "thumbnail": "/assets/math.jpg",
+    "duration": 550,
+    "reviewCount": 6,
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Einführung",
+        "subSections": []
+      },
+      {
+        "name": "Codierung von Zahlen in digitalen Rechnern",
+        "subSections": []
+      },
+      {
+        "name": "Logische Grundlagen",
+        "subSections": []
+      },
+      {
+        "name": "Beweistechniken",
+        "subSections": []
+      },
+      {
+        "name": "Relationen, Abbildungen, Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Algebraische Grundstrukturen",
+        "subSections": []
+      },
+      {
+        "name": "Komplexe Zahlen",
+        "subSections": []
+      },
+      {
+        "name": "Vektorräume und lineare Algebra ",
+        "subSections": []
+      },
+      {
+        "name": "Lineare Gleichungssysteme",
+        "subSections": []
+      },
+      {
+        "name": "Folgen und Reihen",
+        "subSections": []
+      },
+      {
+        "name": "Grenzwerte von Folgen und Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Stetigkeit und Differenzierbarkeit von Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Integration",
+        "subSections": []
+      }
+    ],
+    "previewVideo": "assets/videos/Mathe1.mp4",
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
   },
   {
     "id": "3",
@@ -235,23 +421,24 @@
       }
     ],
     "previewVideo": "assets/videos/Wahrscheinlichkeitsbäume.mp4",
-    "isAvailable": true
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
   },
   {
-    "id": "4",
-    "name": "Algorithmen und Datenstrukturen",
-    "author": "Jonas Wolfram",
-    "description": "Eine Zusammenfassung von Algorithmen und Datenstrukturen",
+    "id": "1",
+    "name": "Künstliche Intelligenz kurz & knapp",
+    "author": "Nico Burkart",
+    "description": "Ich habe das umfassende Themengebiet KI für dich aufs Wesentliche runtergebrochen.",
     "lecture": {
-      "name": "Algorithmen und Datenstrukturen",
-      "lecturer": "Prof. Dr. Christian Becker-Asano"
+      "name": "Künstliche Intelligenz",
+      "lecturer": "Prof. Dr. Maucher"
     },
     "price": 50,
     "discountedPrice": 30,
-    "rating": 0,
-    "thumbnail": "/assets/code.jpg",
-    "duration": "N/A",
-    "reviewCount": 0,
+    "rating": 4,
+    "thumbnail": "/assets/images/kuenstliche-intelligenz.jpg",
+    "duration": 250,
+    "reviewCount": 8,
     "university": "hdm",
     "sections": [
       {
@@ -305,8 +492,9 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
-    "isAvailable": false
+    "previewVideo": "assets/videos/KI_Trim.mp4",
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
   },
   {
     "id": "5",
@@ -377,7 +565,80 @@
       }
     ],
     "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
-    "isAvailable": false
+    "isAvailable": false,
+    "universityCourse": "medieninformatik"
+  },
+  {
+    "id": "4",
+    "name": "Algorithmen und Datenstrukturen",
+    "author": "Jonas Wolfram",
+    "description": "Eine Zusammenfassung von Algorithmen und Datenstrukturen",
+    "lecture": {
+      "name": "Algorithmen und Datenstrukturen",
+      "lecturer": "Prof. Dr. Christian Becker-Asano"
+    },
+    "price": 50,
+    "discountedPrice": 30,
+    "rating": 0,
+    "thumbnail": "/assets/code.jpg",
+    "duration": "N/A",
+    "reviewCount": 0,
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Einführung",
+        "subSections": []
+      },
+      {
+        "name": "Problemlösende Agenten und Suchverfahren",
+        "subSections": [
+          {
+            "name": "Algorithmen für vollständige und lokale Suche (z.B. Genetischer Algorithums)"
+          }
+        ]
+      },
+      {
+        "name": "Kurzeinführung Wissenrepräsentation und Inferenz",
+        "subSections": []
+      },
+      {
+        "name": "Schließen mit Unsicherheit",
+        "subSections": [
+          {
+            "name": "Wahrscheinlichkeitstheorie, Bayes-Netze"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (überwacht)",
+        "subSections": [
+          {
+            "name": "Entscheidungsbäume"
+          },
+          {
+            "name": "Neuronale Netze: SLP, MLP, Grundlagen Deep Learning"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (unüberwacht)",
+        "subSections": [
+          {
+            "name": "Ähnlichkeitsmaße"
+          },
+          {
+            "name": "Clusteringalgorithmen"
+          }
+        ]
+      },
+      {
+        "name": "Maschinelles Lernen (bestärkend)",
+        "subSections": []
+      }
+    ],
+    "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
+    "isAvailable": false,
+    "universityCourse": "medieninformatik"
   },
   {
     "id": "6",
@@ -448,6 +709,7 @@
       }
     ],
     "previewVideo": "assets/videos/kuenstliche-intelligenz-preview-video.mp4",
-    "isAvailable": false
+    "isAvailable": false,
+    "universityCourse": "medieninformatik"
   }
 ]

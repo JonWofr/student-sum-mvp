@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   onChangeSelectValue(value: string): void {
-    if (value === 'medieninformatik') {
-      this.router.navigateByUrl('search-results/hdm');
-    }
+    this.router.navigateByUrl(`search-results/${value}`);
   }
 
   constructor(private router: Router) {}

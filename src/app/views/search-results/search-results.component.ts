@@ -18,8 +18,10 @@ export class SearchResultsComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    const university = this.activatedRoute.snapshot.paramMap.get('university');
-    this.selectValue = university !== null ? university : '';
+    const universityCourse = this.activatedRoute.snapshot.paramMap.get(
+      'universityCourse'
+    );
+    this.selectValue = universityCourse !== null ? universityCourse : '';
     this.shouldShowSpinner = true;
 
     const xhr = new XMLHttpRequest();
@@ -28,7 +30,7 @@ export class SearchResultsComponent implements OnInit {
       this.courses = event.target.response;
       this.filteredCourses = this.filterCoursesBySelectValue(
         this.courses,
-        university
+        universityCourse
       );
     });
     xhr.addEventListener('error', (error) => console.error(error));
@@ -43,7 +45,7 @@ export class SearchResultsComponent implements OnInit {
   }
 
   filterCoursesBySelectValue(courses: Course[], value: string): Course[] {
-    return courses.filter((course) => course.university === value);
+    return courses.filter((course) => course.universityCourse === value);
   }
 
   onClickCourseCard(course: Course) {

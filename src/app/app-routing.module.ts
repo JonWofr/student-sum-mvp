@@ -10,7 +10,7 @@ import { BuyFormComponent } from './views/buy-form/buy-form.component';
 
 const routes: Routes = [
   {
-    path: 'search-results/:university',
+    path: 'search-results/:universityCourse',
     component: SearchResultsComponent,
   },
   {
