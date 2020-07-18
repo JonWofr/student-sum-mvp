@@ -20,7 +20,7 @@ export class SearchfieldComponent implements OnInit {
 
     firebase
       .analytics()
-      .logEvent('Changed university select value to: ' + value);
+      .logEvent('Changed course-type select value to: ' + value);
 
     this.changeSelectValue.emit(value);
   }

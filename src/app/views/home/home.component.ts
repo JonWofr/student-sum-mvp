@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   onChangeSelectValue(value: string): void {
-    if (value === 'hdm') {
+    if (value === 'medieninformatik') {
       this.router.navigateByUrl('search-results/hdm');
     }
   }
