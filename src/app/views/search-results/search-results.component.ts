@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../models/course';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as firebase from 'firebase';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-search-results',
@@ -32,6 +32,9 @@ export class SearchResultsComponent implements OnInit {
         this.courses,
         universityCourse
       );
+      analytics().logEvent('view_search_results', {
+        search_term: universityCourse,
+      });
     });
     xhr.addEventListener('error', (error) => console.error(error));
     xhr.open('GET', '/assets/data/courses.json', true);
@@ -42,6 +45,7 @@ export class SearchResultsComponent implements OnInit {
   onChangeSelectValue(value: string): void {
     this.selectValue = value;
     this.filteredCourses = this.filterCoursesBySelectValue(this.courses, value);
+    analytics().logEvent('view_search_results', { search_term: value });
   }
 
   filterCoursesBySelectValue(courses: Course[], value: string): Course[] {
@@ -51,11 +55,7 @@ export class SearchResultsComponent implements OnInit {
   onClickCourseCard(course: Course) {
     this.selectedCourse = course;
 
-    firebase
-      .analytics()
-      .logEvent(
-        'Clicked on course card with name: ' + this.selectedCourse.name
-      );
+    analytics().logEvent('view_item', { items: [{ item_name: course.name }] });
 
     if (course.isAvailable) {
       // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.

@@ -11,78 +11,57 @@
     "price": 40,
     "discountedPrice": 24,
     "rating": 4.8,
-    "thumbnail": "/assets/images/web-development.jpg",
-    "duration": 180,
-    "reviewCount": 7,
+    "thumbnail": "/assets/images/software-entwicklung-1.jpg",
+    "duration": 500,
+    "reviewCount": 9,
     "university": "hdm",
     "sections": [
       {
-        "name": "Web Grundlagen",
+        "name": "Einführung",
         "subSections": []
       },
       {
-        "name": "HTML Seiteninhalt strukturieren",
-        "subSections": [
-          {
-            "name": "Listen"
-          },
-          {
-            "name": "Tabellen"
-          },
-          {
-            "name": "Strukturelemente"
-          },
-          {
-            "name": "Entities"
-          }
-        ]
-      },
-      {
-        "name": "HTML Zeilen vs. Blockelemente",
+        "name": "Grundwissen zu Java",
         "subSections": []
       },
       {
-        "name": "HTML Verknüpfung von Webseiten",
+        "name": "Statements",
         "subSections": []
       },
       {
-        "name": "HTML Textformatierung",
+        "name": "Objekte und Klassen",
         "subSections": []
       },
       {
-        "name": "HTML Einbinden von Ressourcen",
+        "name": "Arrays",
         "subSections": []
       },
       {
-        "name": "CSS Grundlagen & Regeln",
+        "name": "Vererbung",
         "subSections": []
       },
       {
-        "name": "CSS Selektoren",
+        "name": "Error Handling",
         "subSections": []
       },
       {
-        "name": "CSS Eigenschaften Werte Vererbung",
+        "name": "Nummern",
         "subSections": []
       },
       {
-        "name": "CSS Farben und Transparenz",
+        "name": "Interface Defintionen und abstrakte Klassen",
         "subSections": []
       },
       {
-        "name": "CSS Variablen",
+        "name": "Application deployment",
         "subSections": []
       },
       {
-        "name": "CSS Hintergrundeffekte",
+        "name": "Streams",
         "subSections": []
       },
       {
-        "name": "CSS Farbverlaeufe",
-        "subSections": []
-      },
-      {
-        "name": "CSS Box Model",
+        "name": "Collections",
         "subSections": []
       }
     ],
@@ -227,6 +206,10 @@
         "subSections": []
       },
       {
+        "name": "CSS Kaskadenregeln",
+        "subSections": []
+      },
+      {
         "name": "CSS Eigenschaften Werte Vererbung",
         "subSections": []
       },
@@ -251,81 +234,7 @@
         "subSections": []
       }
     ],
-    "previewVideo": "assets/videos/KI_Trim.mp4",
-    "isAvailable": true,
-    "universityCourse": "medieninformatik"
-  },
-  {
-    "id": "2",
-    "name": "Unimathe mal verständlich",
-    "author": "Nico Burkart",
-    "description": "Mathematik des ersten Semesters einfach mit Beispielen erklärt.",
-    "lecture": {
-      "name": "Mathematik 1",
-      "lecturer": "Prof. Dr. Jens-Uwe-Hahn"
-    },
-    "price": 42,
-    "discountedPrice": 25,
-    "rating": 4.7,
-    "thumbnail": "/assets/math.jpg",
-    "duration": 550,
-    "reviewCount": 6,
-    "university": "hdm",
-    "sections": [
-      {
-        "name": "Einführung",
-        "subSections": []
-      },
-      {
-        "name": "Codierung von Zahlen in digitalen Rechnern",
-        "subSections": []
-      },
-      {
-        "name": "Logische Grundlagen",
-        "subSections": []
-      },
-      {
-        "name": "Beweistechniken",
-        "subSections": []
-      },
-      {
-        "name": "Relationen, Abbildungen, Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Algebraische Grundstrukturen",
-        "subSections": []
-      },
-      {
-        "name": "Komplexe Zahlen",
-        "subSections": []
-      },
-      {
-        "name": "Vektorräume und lineare Algebra ",
-        "subSections": []
-      },
-      {
-        "name": "Lineare Gleichungssysteme",
-        "subSections": []
-      },
-      {
-        "name": "Folgen und Reihen",
-        "subSections": []
-      },
-      {
-        "name": "Grenzwerte von Folgen und Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Stetigkeit und Differenzierbarkeit von Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Integration",
-        "subSections": []
-      }
-    ],
-    "previewVideo": "assets/videos/Mathe1.mp4",
+    "previewVideo": "assets/videos/web_dev.mp4",
     "isAvailable": true,
     "universityCourse": "medieninformatik"
   },

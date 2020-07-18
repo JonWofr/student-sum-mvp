@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-banner',
@@ -17,6 +17,6 @@ export class BannerComponent implements OnInit {
     mouseEvent.preventDefault();
     mouseEvent.stopPropagation();
 
-    firebase.analytics().logEvent('Clicked banner close button');
+    analytics().logEvent('dismiss_banner');
   }
 }

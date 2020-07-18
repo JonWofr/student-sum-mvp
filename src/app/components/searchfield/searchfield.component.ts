@@ -18,10 +18,6 @@ export class SearchfieldComponent implements OnInit {
     event.stopPropagation();
     event.preventDefault();
 
-    firebase
-      .analytics()
-      .logEvent('Changed course-type select value to: ' + value);
-
     this.changeSelectValue.emit(value);
   }
 }

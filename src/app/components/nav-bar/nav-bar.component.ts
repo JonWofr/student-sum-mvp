@@ -13,8 +13,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {}
 
   onClickLink(path: string) {
-    firebase.analytics().logEvent('Clicked on nav bar link named: ' + path);
-
     this.router.navigateByUrl(path);
   }
 }

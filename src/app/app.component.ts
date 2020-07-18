@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import * as firebase from 'firebase';
+import { initializeApp, analytics } from 'firebase';
 import { environment } from 'src/environments/environment';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,12 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = 'studary';
 
-  constructor() {
-    firebase.initializeApp(environment.firebaseConfig);
+  constructor(router: Router) {
+    initializeApp(environment.firebaseConfig);
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        console.log(event.urlAfterRedirects);
+      }
+    });
   }
 }

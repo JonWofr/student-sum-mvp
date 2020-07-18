@@ -2,8 +2,8 @@
   "targets": {
     "studary-98dad": {
       "hosting": {
-        "release": [
-          "studary"
+        "studary": [
+          "studary-98dad"
         ]
       }
     }

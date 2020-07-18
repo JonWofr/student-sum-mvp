@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from 'src/app/models/course';
 import { Router } from '@angular/router';
-import * as firebase from 'firebase';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-course-modal',
@@ -26,12 +26,9 @@ export class CourseModalComponent implements OnInit {
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
 
-    firebase
-      .analytics()
-      .logEvent(
-        'Clicked modal close button of course with name: ' +
-          this._selectedCourse.name
-      );
+    analytics().logEvent('dismiss_item', {
+      items: [{ item_name: this._selectedCourse }],
+    });
 
     (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
     (document.querySelector('video') as HTMLVideoElement).pause();
@@ -41,12 +38,11 @@ export class CourseModalComponent implements OnInit {
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
 
-    firebase
-      .analytics()
-      .logEvent(
-        'Clicked modal purchase button of course with name: ' +
-          this._selectedCourse.name
-      );
+    analytics().logEvent('add_to_cart', {
+      value: this._selectedCourse.discountedPrice,
+      currency: 'EUR',
+      items: [{ name: this._selectedCourse.name }],
+    });
 
     (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
     this.router.navigateByUrl('warenkorb');

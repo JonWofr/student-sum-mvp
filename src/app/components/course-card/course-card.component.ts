@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from '../../models/course';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-course-card',
@@ -27,5 +28,14 @@ export class CourseCardComponent implements OnInit {
     return (
       Math.floor(durationInMin / 60) + ' Std. ' + (durationInMin % 60) + ' Min.'
     );
+  }
+
+  onClickRating(mouseEvent: MouseEvent) {
+    mouseEvent.stopPropagation();
+    mouseEvent.preventDefault();
+
+    analytics().logEvent('show_reviews', {
+      items: [{ item_name: this._course.name }],
+    });
   }
 }
