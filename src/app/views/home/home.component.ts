@@ -11,6 +11,12 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl(`search-results/${value}`);
   }
 
+  toggleCalculator = false;
+
+  onClick() {
+    this.toggleCalculator = !this.toggleCalculator;
+  }
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {}

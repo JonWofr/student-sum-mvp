@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 // Views
 
@@ -19,6 +20,7 @@ import { AdvantageComponent } from './components/advantage/advantage.component';
 import { SearchfieldComponent } from './components/searchfield/searchfield.component';
 import { CourseModalComponent } from './components/course-modal/course-modal.component';
 import { BuyFormComponent } from './views/buy-form/buy-form.component';
+import { CreaterCalculatorComponent } from './components/creater-calculator/creater-calculator.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +36,9 @@ import { BuyFormComponent } from './views/buy-form/buy-form.component';
     SearchfieldComponent,
     CourseModalComponent,
     BuyFormComponent,
+    CreaterCalculatorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -19,7 +19,11 @@
   <div class="row advantages-box">
     <app-advantage class="col-md-3" [advID]="0"></app-advantage>
     <app-advantage class="col-md-3" [advID]="1"></app-advantage>
-    <app-advantage class="col-md-3" [advID]="2"></app-advantage>
+    <app-advantage
+      (click)="onClick()"
+      class="col-md-3"
+      [advID]="2"
+    ></app-advantage>
   </div>
 </div>
 
@@ -59,4 +63,6 @@
       </p>
     </div>
   </div>
+
+  <app-creater-calculator *ngIf="toggleCalculator"></app-creater-calculator>
 </div>
