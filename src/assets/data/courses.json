@@ -12,7 +12,7 @@
     "discountedPrice": 14.99,
     "rating": 4.4,
     "thumbnail": "/assets/images/web-development.jpg",
-    "duration": 180,
+    "duration": 195,
     "reviewCount": 7,
     "university": "hdm",
     "sections": [
@@ -180,10 +180,10 @@
     },
     "price": 39.99,
     "discountedPrice": 23.99,
-    "rating": 4.8,
+    "rating": 0,
     "thumbnail": "/assets/images/software-entwicklung-1.jpg",
-    "duration": 500,
-    "reviewCount": 9,
+    "duration": "N/A",
+    "reviewCount": 0,
     "university": "hdm",
     "sections": [
       {
@@ -248,11 +248,11 @@
       "name": "Angewandte Mathematik",
       "lecturer": "Prof. Dr. Jens-Uwe Hahn"
     },
-    "price": 33,
-    "discountedPrice": 20,
+    "price": 19.99,
+    "discountedPrice": 11.99,
     "rating": 4.4,
     "thumbnail": "/assets/images/angewandte-mathe.jpg",
-    "duration": 180,
+    "duration": 213,
     "reviewCount": 4,
     "university": "hdm",
     "sections": [
