@@ -79,7 +79,12 @@
             <h6>
               Vorstellung des Tutors:
             </h6>
-            <video controls [src]="_selectedCourse.previewVideo"></video>
+            <video
+              controls
+              [src]="_selectedCourse.previewVideo"
+              (play)="onChangeVideo($event)"
+              (pause)="onChangeVideo($event)"
+            ></video>
           </div>
         </div>
       </div>

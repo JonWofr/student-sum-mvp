@@ -35,7 +35,7 @@ export class CourseCardComponent implements OnInit {
     mouseEvent.preventDefault();
 
     analytics().logEvent('show_reviews', {
-      items: [{ item_name: this._course.name }],
+      item_name: this._course.name,
     });
   }
 }

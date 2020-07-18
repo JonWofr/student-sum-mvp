@@ -45,7 +45,9 @@ export class SearchResultsComponent implements OnInit {
   onChangeSelectValue(value: string): void {
     this.selectValue = value;
     this.filteredCourses = this.filterCoursesBySelectValue(this.courses, value);
-    analytics().logEvent('view_search_results', { search_term: value });
+    analytics().logEvent('view_search_results', {
+      search_term: value,
+    });
   }
 
   filterCoursesBySelectValue(courses: Course[], value: string): Course[] {

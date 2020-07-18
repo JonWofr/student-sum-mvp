@@ -17,6 +17,8 @@ export class CourseModalComponent implements OnInit {
   _selectedCourse: Course;
   duration: string;
   starValues = [1, 2, 3, 4, 5];
+  isVideoPlaying = false;
+  videoStartDateInMs: number;
 
   constructor(private router: Router) {}
 
@@ -26,12 +28,23 @@ export class CourseModalComponent implements OnInit {
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
 
-    analytics().logEvent('dismiss_item', {
-      items: [{ item_name: this._selectedCourse }],
+    analytics().logEvent('close_modal', {
+      item_name: this._selectedCourse.name,
     });
 
+    if (this.isVideoPlaying) {
+      const playDurationInS = (Date.now() - this.videoStartDateInMs) / 1000;
+      this.videoStartDateInMs = 0;
+      analytics().logEvent('stop_video', {
+        duration_in_s: playDurationInS,
+      });
+
+      this.isVideoPlaying = !this.isVideoPlaying;
+
+      (document.querySelector('video') as HTMLVideoElement).pause();
+    }
+
     (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
-    (document.querySelector('video') as HTMLVideoElement).pause();
   }
 
   onClickPurchaseButton(mouseEvent: MouseEvent) {
@@ -41,7 +54,7 @@ export class CourseModalComponent implements OnInit {
     analytics().logEvent('add_to_cart', {
       value: this._selectedCourse.discountedPrice,
       currency: 'EUR',
-      items: [{ name: this._selectedCourse.name }],
+      items: [{ item_name: this._selectedCourse.name }],
     });
 
     (document.querySelector('#modal-trigger') as HTMLButtonElement).click();
@@ -55,5 +68,22 @@ export class CourseModalComponent implements OnInit {
     return (
       Math.floor(durationInMin / 60) + ' Std. ' + (durationInMin % 60) + ' Min.'
     );
+  }
+
+  onChangeVideo(event): void {
+    console.log(event);
+
+    if (this.isVideoPlaying) {
+      const playDurationInS = (Date.now() - this.videoStartDateInMs) / 1000;
+      this.videoStartDateInMs = 0;
+      analytics().logEvent('stop_video', {
+        duration_in_s: playDurationInS,
+      });
+    } else {
+      this.videoStartDateInMs = Date.now();
+      analytics().logEvent('start_video');
+    }
+
+    this.isVideoPlaying = !this.isVideoPlaying;
   }
 }

@@ -1,149 +1,5 @@
 [
   {
-    "id": "8",
-    "name": "Software Entwicklung 1 zusammengefasst",
-    "author": "Nico Burkart",
-    "description": "Grundlagenwissen Java, anschaulich erläutert.",
-    "lecture": {
-      "name": "Software Entwicklung 1",
-      "lecturer": "Prof. Dr. Martin Goik"
-    },
-    "price": 40,
-    "discountedPrice": 24,
-    "rating": 4.8,
-    "thumbnail": "/assets/images/software-entwicklung-1.jpg",
-    "duration": 500,
-    "reviewCount": 9,
-    "university": "hdm",
-    "sections": [
-      {
-        "name": "Einführung",
-        "subSections": []
-      },
-      {
-        "name": "Grundwissen zu Java",
-        "subSections": []
-      },
-      {
-        "name": "Statements",
-        "subSections": []
-      },
-      {
-        "name": "Objekte und Klassen",
-        "subSections": []
-      },
-      {
-        "name": "Arrays",
-        "subSections": []
-      },
-      {
-        "name": "Vererbung",
-        "subSections": []
-      },
-      {
-        "name": "Error Handling",
-        "subSections": []
-      },
-      {
-        "name": "Nummern",
-        "subSections": []
-      },
-      {
-        "name": "Interface Defintionen und abstrakte Klassen",
-        "subSections": []
-      },
-      {
-        "name": "Application deployment",
-        "subSections": []
-      },
-      {
-        "name": "Streams",
-        "subSections": []
-      },
-      {
-        "name": "Collections",
-        "subSections": []
-      }
-    ],
-    "previewVideo": "assets/videos/KI_Trim.mp4",
-    "isAvailable": true,
-    "universityCourse": "medieninformatik"
-  },
-  {
-    "id": "2",
-    "name": "Unimathe mal verständlich",
-    "author": "Nico Burkart",
-    "description": "Mathematik des ersten Semesters einfach mit Beispielen erklärt.",
-    "lecture": {
-      "name": "Mathematik 1",
-      "lecturer": "Prof. Dr. Jens-Uwe-Hahn"
-    },
-    "price": 42,
-    "discountedPrice": 25,
-    "rating": 4.7,
-    "thumbnail": "/assets/math.jpg",
-    "duration": 550,
-    "reviewCount": 6,
-    "university": "hdm",
-    "sections": [
-      {
-        "name": "Einführung",
-        "subSections": []
-      },
-      {
-        "name": "Codierung von Zahlen in digitalen Rechnern",
-        "subSections": []
-      },
-      {
-        "name": "Logische Grundlagen",
-        "subSections": []
-      },
-      {
-        "name": "Beweistechniken",
-        "subSections": []
-      },
-      {
-        "name": "Relationen, Abbildungen, Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Algebraische Grundstrukturen",
-        "subSections": []
-      },
-      {
-        "name": "Komplexe Zahlen",
-        "subSections": []
-      },
-      {
-        "name": "Vektorräume und lineare Algebra ",
-        "subSections": []
-      },
-      {
-        "name": "Lineare Gleichungssysteme",
-        "subSections": []
-      },
-      {
-        "name": "Folgen und Reihen",
-        "subSections": []
-      },
-      {
-        "name": "Grenzwerte von Folgen und Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Stetigkeit und Differenzierbarkeit von Funktionen",
-        "subSections": []
-      },
-      {
-        "name": "Integration",
-        "subSections": []
-      }
-    ],
-    "previewVideo": "assets/videos/Mathe1.mp4",
-    "isAvailable": true,
-    "universityCourse": "medieninformatik"
-  },
-  {
     "id": "7",
     "name": "Grundlagen der Webentwicklung",
     "author": "Nico Burkart",
@@ -152,8 +8,8 @@
       "name": "Web Development",
       "lecturer": "Prof. Dr. Dirk Heuzeroth"
     },
-    "price": 25,
-    "discountedPrice": 15,
+    "price": 24.99,
+    "discountedPrice": 14.99,
     "rating": 4.4,
     "thumbnail": "/assets/images/web-development.jpg",
     "duration": 180,
@@ -236,6 +92,151 @@
     ],
     "previewVideo": "assets/videos/web_dev.mp4",
     "isAvailable": true,
+    "universityCourse": "medieninformatik"
+  },
+  {
+    "id": "2",
+    "name": "Unimathe mal verständlich",
+    "author": "Nico Burkart",
+    "description": "Mathematik des ersten Semesters einfach mit Beispielen erklärt.",
+    "lecture": {
+      "name": "Mathematik 1",
+      "lecturer": "Prof. Dr. Jens-Uwe-Hahn"
+    },
+    "price": 24.99,
+    "discountedPrice": 14.99,
+    "rating": 4.7,
+    "thumbnail": "/assets/math.jpg",
+    "duration": 550,
+    "reviewCount": 6,
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Einführung",
+        "subSections": []
+      },
+      {
+        "name": "Codierung von Zahlen in digitalen Rechnern",
+        "subSections": []
+      },
+      {
+        "name": "Logische Grundlagen",
+        "subSections": []
+      },
+      {
+        "name": "Beweistechniken",
+        "subSections": []
+      },
+      {
+        "name": "Relationen, Abbildungen, Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Algebraische Grundstrukturen",
+        "subSections": []
+      },
+      {
+        "name": "Komplexe Zahlen",
+        "subSections": []
+      },
+      {
+        "name": "Vektorräume und lineare Algebra ",
+        "subSections": []
+      },
+      {
+        "name": "Lineare Gleichungssysteme",
+        "subSections": []
+      },
+      {
+        "name": "Folgen und Reihen",
+        "subSections": []
+      },
+      {
+        "name": "Grenzwerte von Folgen und Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Stetigkeit und Differenzierbarkeit von Funktionen",
+        "subSections": []
+      },
+      {
+        "name": "Integration",
+        "subSections": []
+      }
+    ],
+    "previewVideo": "assets/videos/Mathe1.mp4",
+    "isAvailable": true,
+    "universityCourse": "medieninformatik"
+  },
+
+  {
+    "id": "8",
+    "name": "Software Entwicklung 1 zusammengefasst",
+    "author": "Nico Burkart",
+    "description": "Grundlagenwissen Java, anschaulich erläutert.",
+    "lecture": {
+      "name": "Software Entwicklung 1",
+      "lecturer": "Prof. Dr. Martin Goik"
+    },
+    "price": 39.99,
+    "discountedPrice": 23.99,
+    "rating": 4.8,
+    "thumbnail": "/assets/images/software-entwicklung-1.jpg",
+    "duration": 500,
+    "reviewCount": 9,
+    "university": "hdm",
+    "sections": [
+      {
+        "name": "Einführung",
+        "subSections": []
+      },
+      {
+        "name": "Grundwissen zu Java",
+        "subSections": []
+      },
+      {
+        "name": "Statements",
+        "subSections": []
+      },
+      {
+        "name": "Objekte und Klassen",
+        "subSections": []
+      },
+      {
+        "name": "Arrays",
+        "subSections": []
+      },
+      {
+        "name": "Vererbung",
+        "subSections": []
+      },
+      {
+        "name": "Error Handling",
+        "subSections": []
+      },
+      {
+        "name": "Nummern",
+        "subSections": []
+      },
+      {
+        "name": "Interface Defintionen und abstrakte Klassen",
+        "subSections": []
+      },
+      {
+        "name": "Application deployment",
+        "subSections": []
+      },
+      {
+        "name": "Streams",
+        "subSections": []
+      },
+      {
+        "name": "Collections",
+        "subSections": []
+      }
+    ],
+    "previewVideo": "assets/videos/KI_Trim.mp4",
+    "isAvailable": false,
     "universityCourse": "medieninformatik"
   },
   {
@@ -342,8 +343,8 @@
       "name": "Künstliche Intelligenz",
       "lecturer": "Prof. Dr. Maucher"
     },
-    "price": 50,
-    "discountedPrice": 30,
+    "price": 29.99,
+    "discountedPrice": 17.99,
     "rating": 4,
     "thumbnail": "/assets/images/kuenstliche-intelligenz.jpg",
     "duration": 250,
@@ -405,6 +406,7 @@
     "isAvailable": true,
     "universityCourse": "medieninformatik"
   },
+
   {
     "id": "5",
     "name": "Rechnernetze",
@@ -414,8 +416,8 @@
       "name": "Rechnernetze",
       "lecturer": "Prof. Roland Kiefer"
     },
-    "price": 42,
-    "discountedPrice": 25,
+    "price": 24.99,
+    "discountedPrice": 14.99,
     "rating": 0,
     "thumbnail": "/assets/cyberspace.jpg",
     "duration": "N/A",
@@ -486,8 +488,8 @@
       "name": "Algorithmen und Datenstrukturen",
       "lecturer": "Prof. Dr. Christian Becker-Asano"
     },
-    "price": 50,
-    "discountedPrice": 30,
+    "price": 29.99,
+    "discountedPrice": 17.99,
     "rating": 0,
     "thumbnail": "/assets/code.jpg",
     "duration": "N/A",
@@ -558,8 +560,8 @@
       "name": "IT Security",
       "lecturer": "Prof. Dr. Joachim Charzinski"
     },
-    "price": 50,
-    "discountedPrice": 30,
+    "price": 29.99,
+    "discountedPrice": 17.99,
     "rating": 0,
     "thumbnail": "/assets/images/it-security.jpg",
     "duration": "N/A",
