@@ -33,7 +33,7 @@ export class CourseModalComponent implements OnInit {
 
     this.angularFireAnalytics
       .logEvent('dismiss_modal', {
-        value: this.selectedCourse.name,
+        value: this._selectedCourse.name,
       })
       .catch((err) =>
         console.error('An error occurred trying to send an event', err)

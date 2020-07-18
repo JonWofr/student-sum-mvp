@@ -4,6 +4,9 @@
       "hosting": {
         "studary": [
           "studary-98dad"
+        ],
+        "release": [
+          "studary"
         ]
       }
     }
