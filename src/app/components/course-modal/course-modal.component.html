@@ -82,14 +82,18 @@
             <video
               controls
               [src]="_selectedCourse.previewVideo"
-              (play)="onChangeVideo($event)"
-              (pause)="onChangeVideo($event)"
+              (play)="onChangeVideo()"
+              (pause)="onChangeVideo()"
             ></video>
           </div>
         </div>
       </div>
       <div class="modal-footer justify-content-between">
-        <div class="d-flex mx-n1 align-items-center" style="cursor: pointer;">
+        <div
+          class="d-flex mx-n1 align-items-center"
+          style="cursor: pointer;"
+          (click)="onClickRating($event)"
+        >
           <div *ngFor="let starValue of starValues" class="px-1">
             <svg
               *ngIf="_selectedCourse.rating >= starValue"

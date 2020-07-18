@@ -83,9 +83,7 @@ export class CourseModalComponent implements OnInit {
     );
   }
 
-  onChangeVideo(event): void {
-    console.log(event);
-
+  onChangeVideo(): void {
     if (this.isVideoPlaying) {
       const playDurationInS = (Date.now() - this.videoStartDateInMs) / 1000;
       this.videoStartDateInMs = 0;
@@ -106,5 +104,18 @@ export class CourseModalComponent implements OnInit {
     }
 
     this.isVideoPlaying = !this.isVideoPlaying;
+  }
+
+  onClickRating(mouseEvent: MouseEvent) {
+    mouseEvent.stopPropagation();
+    mouseEvent.preventDefault();
+
+    this.angularFireAnalytics
+      .logEvent('click_rating', {
+        value: this._selectedCourse.name,
+      })
+      .catch((err) =>
+        console.error('An error occurred trying to send an event', err)
+      );
   }
 }
