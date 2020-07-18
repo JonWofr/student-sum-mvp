@@ -2,6 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import {
+  AngularFireAnalyticsModule,
+  ScreenTrackingService,
+  DEBUG_MODE,
+} from '@angular/fire/analytics';
 
 // Views
 
@@ -21,6 +27,7 @@ import { SearchfieldComponent } from './components/searchfield/searchfield.compo
 import { CourseModalComponent } from './components/course-modal/course-modal.component';
 import { BuyFormComponent } from './views/buy-form/buy-form.component';
 import { CreaterCalculatorComponent } from './components/creater-calculator/creater-calculator.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -38,8 +45,14 @@ import { CreaterCalculatorComponent } from './components/creater-calculator/crea
     BuyFormComponent,
     CreaterCalculatorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule,
+  ],
+  providers: [ScreenTrackingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

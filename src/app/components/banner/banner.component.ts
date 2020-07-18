@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { analytics } from 'firebase';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-banner',
@@ -9,7 +9,7 @@ import { analytics } from 'firebase';
 export class BannerComponent implements OnInit {
   display = true;
 
-  constructor() {}
+  constructor(private angularFireAnalytics: AngularFireAnalytics) {}
 
   ngOnInit(): void {}
 
@@ -17,6 +17,12 @@ export class BannerComponent implements OnInit {
     mouseEvent.preventDefault();
     mouseEvent.stopPropagation();
 
-    analytics().logEvent('dismiss_banner');
+    this.angularFireAnalytics
+      .logEvent('dismiss_banner')
+      .catch((err) =>
+        console.error('An error occurred trying to send an event', err)
+      );
+
+    this.display = false;
   }
 }

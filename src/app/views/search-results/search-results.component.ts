@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../models/course';
 import { ActivatedRoute, Router } from '@angular/router';
-import { analytics } from 'firebase';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-search-results',
@@ -15,7 +15,11 @@ export class SearchResultsComponent implements OnInit {
   selectedCourse: Course;
   shouldShowSpinner = false;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private angularFireAnalytics: AngularFireAnalytics
+  ) {}
 
   ngOnInit(): void {
     const universityCourse = this.activatedRoute.snapshot.paramMap.get(
@@ -32,9 +36,13 @@ export class SearchResultsComponent implements OnInit {
         this.courses,
         universityCourse
       );
-      analytics().logEvent('view_search_results', {
-        search_term: universityCourse,
-      });
+      this.angularFireAnalytics
+        .logEvent('view_search_results', {
+          search_term: universityCourse,
+        })
+        .catch((err) =>
+          console.error('An error occurred trying to send an event', err)
+        );
     });
     xhr.addEventListener('error', (error) => console.error(error));
     xhr.open('GET', '/assets/data/courses.json', true);
@@ -45,9 +53,13 @@ export class SearchResultsComponent implements OnInit {
   onChangeSelectValue(value: string): void {
     this.selectValue = value;
     this.filteredCourses = this.filterCoursesBySelectValue(this.courses, value);
-    analytics().logEvent('view_search_results', {
-      search_term: value,
-    });
+    this.angularFireAnalytics
+      .logEvent('view_search_results', {
+        search_term: value,
+      })
+      .catch((err) =>
+        console.error('An error occurred trying to send an event', err)
+      );
   }
 
   filterCoursesBySelectValue(courses: Course[], value: string): Course[] {
@@ -57,7 +69,13 @@ export class SearchResultsComponent implements OnInit {
   onClickCourseCard(course: Course) {
     this.selectedCourse = course;
 
-    analytics().logEvent('view_item', { items: [{ item_name: course.name }] });
+    this.angularFireAnalytics
+      .logEvent('view_item', {
+        value: course.name,
+      })
+      .catch((err) =>
+        console.error('An error occurred trying to send an event', err)
+      );
 
     if (course.isAvailable) {
       // Used to defer the call of the function to the next tick. Otherwise the modal does not get its data in time.

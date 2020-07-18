@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from '../../models/course';
-import { analytics } from 'firebase';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-course-card',
@@ -17,7 +17,7 @@ export class CourseCardComponent implements OnInit {
   duration: string;
   starValues = [1, 2, 3, 4, 5];
 
-  constructor() {}
+  constructor(private angularFireAnalytics: AngularFireAnalytics) {}
 
   ngOnInit(): void {}
 
@@ -34,8 +34,12 @@ export class CourseCardComponent implements OnInit {
     mouseEvent.stopPropagation();
     mouseEvent.preventDefault();
 
-    analytics().logEvent('show_reviews', {
-      item_name: this._course.name,
-    });
+    this.angularFireAnalytics
+      .logEvent('click_rating', {
+        value: this._course.name,
+      })
+      .catch((err) =>
+        console.error('An error occurred trying to send an event', err)
+      );
   }
 }
